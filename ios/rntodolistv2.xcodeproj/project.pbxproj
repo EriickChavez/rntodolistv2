@@ -12,6 +12,7 @@
 		691816DB47529A2259086D0E /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		937138CC2DC0F61800E6AE81 /* RCTNativeToast.mm in Sources */ = {isa = PBXBuildFile; fileRef = 937138CB2DC0F61800E6AE81 /* RCTNativeToast.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		5DCACB8F33CDC322A6C60F78 /* libPods-rntodolistv2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rntodolistv2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = rntodolistv2/AppDelegate.swift; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = rntodolistv2/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		937138C92DC0F61800E6AE81 /* rntodolistv2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "rntodolistv2-Bridging-Header.h"; sourceTree = "<group>"; };
+		937138CA2DC0F61800E6AE81 /* RCTNativeToast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTNativeToast.h; sourceTree = "<group>"; };
+		937138CB2DC0F61800E6AE81 /* RCTNativeToast.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RCTNativeToast.mm; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -70,6 +74,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				937138C82DC0F5D500E6AE81 /* NativeToast */,
 				13B07FAE1A68108700A75B9A /* rntodolistv2 */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				83CBBA001A601CBA00E9B192 /* Products */,
@@ -87,6 +92,16 @@
 				13B07F961A680F5B00A75B9A /* rntodolistv2.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		937138C82DC0F5D500E6AE81 /* NativeToast */ = {
+			isa = PBXGroup;
+			children = (
+				937138CA2DC0F61800E6AE81 /* RCTNativeToast.h */,
+				937138CB2DC0F61800E6AE81 /* RCTNativeToast.mm */,
+				937138C92DC0F61800E6AE81 /* rntodolistv2-Bridging-Header.h */,
+			);
+			path = NativeToast;
 			sourceTree = "<group>";
 		};
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
@@ -131,7 +146,7 @@
 				LastUpgradeCheck = 1210;
 				TargetAttributes = {
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1620;
 					};
 				};
 			};
@@ -246,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				937138CC2DC0F61800E6AE81 /* RCTNativeToast.mm in Sources */,
 				761780ED2CA45674006654EE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +291,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = rntodolistv2;
+				SWIFT_OBJC_BRIDGING_HEADER = "NativeToast/rntodolistv2-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -302,6 +319,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = rntodolistv2;
+				SWIFT_OBJC_BRIDGING_HEADER = "NativeToast/rntodolistv2-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
