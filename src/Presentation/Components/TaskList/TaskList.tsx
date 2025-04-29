@@ -13,12 +13,15 @@ import { useNavigation } from '@react-navigation/native';
 import { SCREEN_NAME } from '@/Enum/Screens';
 import { HomeStackParamList } from '@/@Types/navigation';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
+import NativeToast from '../../../../specs/NativeToast';
+
 
 interface TaskListProps {
   data: Task[];
 }
 
 const TaskList: React.FC<TaskListProps> = props => {
+
   const dispatch = useDispatch();
   const navigation =
     useNavigation<NativeStackNavigationProp<HomeStackParamList>>();
@@ -43,6 +46,13 @@ const TaskList: React.FC<TaskListProps> = props => {
 
   const onCheckTask = useCallback(
     (task: Task) => {
+      // AQUI
+      NativeToast?.showToast(
+        task.isChecked
+          ? 'Tarea completada'
+          : 'Tarea incompletada',
+    );
+
       dispatch(
         TaskSlice.actions.updateTask({
           task,
