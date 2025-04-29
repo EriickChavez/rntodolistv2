@@ -2370,7 +2370,7 @@ SPEC CHECKSUMS:
   React-timing: 8c58486869a85e0ad592750d3545d971d6896d3f
   React-utils: 644a5ee84adb7c86cdd0ff109c69ea99289803c8
   ReactAppDependencyProvider: f3426eaf6dabae0baec543cd7bac588b6f59210c
-  ReactCodegen: 3288d61658273d72fbd348a74b59710b9790615f
+  ReactCodegen: 4a346abbdde8682d01b6266eba15bb531b71aaa5
   ReactCommon: 9f975582dc535de1de110bdb46d4553140a77541
   ReactNativeLocalization: fb171138cdc80d5d0d4f20243d2fc82c2b3cc48f
   RNCAsyncStorage: c1bbcf629d7206d1e19310827848b98d68a4cbaf
@@ -2379,7 +2379,7 @@ SPEC CHECKSUMS:
   RNScreens: c5c07a86e4088ce92f0d3854082250dfa9c61f75
   RNSVG: ee32efbed652c5151fd3f98bed13c68af285bc38
   SocketRocket: d4aabe649be1e368d1318fdf28a022d714d65748
-  Yoga: d15f5aa644c466e917569ac43b19cbf17975239a
+  Yoga: fee373fb83c58550e84555a4e6bdafc34b4c5790
 
 PODFILE CHECKSUM: aa1b536956e2ac68d9a9fb7109ce0d6b4f6ad5ac
 
